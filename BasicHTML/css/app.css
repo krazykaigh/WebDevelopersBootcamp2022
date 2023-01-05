@@ -1,0 +1,20 @@
+
+span {
+ background-color: blue;
+ color: white;
+
+}
+
+.oddWords {
+  font-weight: bolder;
+}
+
+.oddWords:hover{
+  font-weight: lighter;
+}
+
+.poem {
+  color: rgb(225, 72, 20);
+  text-decoration:underline
+}
+
