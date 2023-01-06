@@ -1,36 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forms Demo</title>
-</head>
-<body>
-  <h1>Forms Demo</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
 
-  <form action="">
-    <div>
-      <label for="username">Enter username: </label>
-      <input id="username" type="text" placeholder="username">
-    </div>
-    <div>
-      <label for="password">Enter password: </label>
-      <input id="password" type="password" placeholder="password">
-    </div>
-    <div>
-      <label for="color">Pick a color: </label>
-      <input id="color" type="color">
-    </div>
-    <div>
-      <label for="number">Choose a number: </label>
-      <input id="number" type="number" placeholder="enter a number">
-    </div>
-    <div>
-      <label for="time">Enter time: </label>
-      <input id="time" type="time">
-    </div>
-  </form>
-  
-</body>
+    <form action="https://example.com">
+      <div>
+        <label for="username">Enter username: </label>
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+      </div>
+      <div>
+        <label for="password">Enter password: </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="password"
+          name="password"
+        />
+      </div>
+      <div>
+        <label for="color">Pick a color: </label>
+        <input id="color" type="color" name="color" />
+      </div>
+      <div>
+        <label for="number">Choose a number: </label>
+        <input
+          id="number"
+          type="number"
+          placeholder="enter a number"
+          name="num"
+        />
+      </div>
+      <div>
+        <label for="time">Enter time: </label>
+        <input id="time" type="time" name="time" />
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+    <hr />
+    <button>Not on a form</button>
+    <h2>Hijacking Searches</h2>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search" target="_blank">
+      <input type="text" name="q" />
+      <button>Search Reddit</button>
+    </form>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search" target="_blank">
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+    <h3>Search YouTube</h3>
+    <form action="https://www.youtube.com/results" target="_blank">
+      <input type="text" name="search_query" />
+      <button>Search YouTube</button>
+    </form>
+
+    <h2>Checkbox Input</h2>
+    <form action="https://example.com" target="_blank">
+      <input type="checkbox" name="agree_tos" id="agree" checked>
+      <label for="agree">I have read and agree</label><br>
+      <button>Submit Agreement</button>
+    </form>
+
+    <h2>Radio Inputs</h2>
+    <form action="https://example.com" target="_blank">
+      <p>
+        <input type="radio" name="size" id="s" value="small">
+        <label for="s">Small</label>
+        <input type="radio" name="size" id="m" value="medium">
+        <label for="m">Medium</label>
+        <input type="radio" name="size" id="l" value="large">
+        <label for="l">Large</label><br>
+      </p>
+      <button>Submit Size</button>
+    </form>
+  </body>
 </html>
