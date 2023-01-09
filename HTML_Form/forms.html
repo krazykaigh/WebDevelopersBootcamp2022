@@ -39,6 +39,8 @@
           type="number"
           placeholder="enter a number"
           name="num"
+          min="5"
+          max="600"
         />
       </div>
       <div>
@@ -70,20 +72,20 @@
 
     <h2>Checkbox Input</h2>
     <form action="https://example.com" target="_blank">
-      <input type="checkbox" name="agree_tos" id="agree" checked>
-      <label for="agree">I have read and agree</label><br>
+      <input type="checkbox" name="agree_tos" id="agree" checked />
+      <label for="agree">I have read and agree</label><br />
       <button>Submit Agreement</button>
     </form>
 
     <h2>Radio Inputs</h2>
     <form action="https://example.com" target="_blank">
       <p>
-        <input type="radio" name="size" id="s" value="small">
+        <input type="radio" name="size" id="s" value="small" />
         <label for="s">Small</label>
-        <input type="radio" name="size" id="m" value="medium">
+        <input type="radio" name="size" id="m" value="medium" />
         <label for="m">Medium</label>
-        <input type="radio" name="size" id="l" value="large">
-        <label for="l">Large</label><br>
+        <input type="radio" name="size" id="l" value="large" />
+        <label for="l">Large</label><br />
       </p>
       <button>Submit Size</button>
     </form>
@@ -95,7 +97,43 @@
         <option value="easter">Easter Egger</option>
         <option value="rhode">Rhode Island Grey</option>
       </select>
-      <button>Select Chicken</button>
-    </form>
+      <p>
+        <label for="eggs">Amount of eggs from chicken</label>
+        <input
+          type="range"
+          id="eggs"
+          min="1"
+          max="5"
+          step=".5"
+          name="egssnum"
+        />
+      <p>
+        <label for="specialreq"> Any Special Requests</label> <br>
+        <textarea id="specialreq" cols="30" rows="10"></textarea>
+        
+      </p>
+      </p>
+        <button>Select Chicken</button>
+      <p>    
+      </form>
+      <h2>Valideations Demo</h2>
+      <form action="https://example.com">
+        <label for="first">Enter First name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+          <label for="usernames">Username</label>       
+          <input 
+            type="text" 
+            id="usernames" 
+            name="usernames"
+            required
+            minlength="5" 
+            maxlength="20"
+          />
+        </p>
+
+        <button>Submit</button>
+      </form>
+
   </body>
 </html>
