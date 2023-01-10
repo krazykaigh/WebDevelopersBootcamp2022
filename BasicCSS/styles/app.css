@@ -1,0 +1,19 @@
+h1 {
+  color:darkblue;
+  background-color: aqua;
+  text-align: center;
+}
+
+h2 {
+  color:blueviolet;
+}
+
+button {
+  background-color:coral;
+  color:darkgreen;
+}
+
+p {
+  color: olivedrab;
+  background-color: cornflowerblue;
+}
