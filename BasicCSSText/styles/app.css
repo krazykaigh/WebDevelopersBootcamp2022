@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  text-decoration: #ff38cd wavy overline;
+  font-family: monospace;
+h2 {
+  letter-spacing: 10px;
+  font-size: 200%;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+  font-style:italic;
+  font-size: 15px;
+}
