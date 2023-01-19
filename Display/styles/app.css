@@ -1,0 +1,19 @@
+h1 {
+  background-color: palegoldenrod;
+  border: 1px solid black;
+  display: inline;
+}
+
+span {
+  background-color: paleturquoise;
+  border: 1px dashed darkblue;
+  display: block;
+}
+
+.spanish {
+  display: inline-block;
+  width: 500px;
+  padding: 10px;
+  margin: 50px;
+
+}
