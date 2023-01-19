@@ -3,6 +3,11 @@ button {
   background-color: #fb8500;
 }
 
+button:hover {
+  background-color: chocolate;
+  color:darkcyan;
+}
+
 body {
   background-color: #8ecae6;
 
@@ -33,7 +38,7 @@ span {
 }
 
 span a {
-  color:chartreuse;
+  color:rgb(46, 88, 3);
 }
 
 .post {
@@ -55,4 +60,43 @@ input + button {
 
 footer > a {
   color:crimson;
+}
+
+label[for="password"] {
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: red wavy underline;
+}
+
+.post a {
+  color: #457b9d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration:rgb(46, 88, 3) underline;
+}
+
+.post button:active{
+  background-color: #e76f51;
+}
+
+button:hover{
+  background-color:brown;
+  color: antiquewhite;
+}
+
+section:nth-of-type(2n){
+  background-color: #457b9d;
+}
+
+p::first-line{
+  color: purple;
+}
+
+p::selection {
+  background-color: #fb8500;
 }
