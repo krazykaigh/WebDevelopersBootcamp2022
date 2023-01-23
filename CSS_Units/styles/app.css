@@ -1,0 +1,41 @@
+section {
+  background-color: grey;
+  width: 400px;
+  height: 600px;
+}
+
+div {
+  background-color:aqua;
+  width: 70%;
+  height: 20%;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 100%;
+  padding-left: 30px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1em;
+}
+
+article {
+  font-size: 20px;
+}
+
+button {
+  font-size: 30px;
+  padding: 0 30px;
+  border-radius: 15px;
+}
