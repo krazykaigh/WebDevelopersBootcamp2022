@@ -1,3 +1,7 @@
+html {
+  font-size: 15px;
+}
+
 section {
   background-color: grey;
   width: 400px;
@@ -31,11 +35,18 @@ p {
 }
 
 article {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 button {
-  font-size: 30px;
-  padding: 0 30px;
-  border-radius: 15px;
+  font-size:  1em;
+  padding: 0 1em;
+  border-radius: .6em;
+  background-color: #b8c0ff;
+  color: blue;
 }
+
+ul {
+  font-size: 1rem;
+}
+
