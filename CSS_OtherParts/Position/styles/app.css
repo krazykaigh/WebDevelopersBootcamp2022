@@ -34,7 +34,8 @@ div {
 }
 
 #fixed #middle {
+  background-color: red;
   position: fixed;
-  top: 200;
-  left: 0;
+  top: 600px;
+  /* left: 0px; */
 }
