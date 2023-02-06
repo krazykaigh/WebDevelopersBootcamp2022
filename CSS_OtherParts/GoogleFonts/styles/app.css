@@ -1,0 +1,25 @@
+body {
+
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', sans-serif;
+}
+h1 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+p {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 300;
+}
