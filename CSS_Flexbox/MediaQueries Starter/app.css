@@ -1,0 +1,77 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    color: red;
+    text-align: center;
+}
+nav {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    border: 1px solid red;
+    flex: 1;
+    display: flex;
+    max-width: 50%;
+    justify-content: space-evenly;
+}
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 500px) {
+    h1 {
+        color: orange;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+@media (min-width: 1500px) {
+    h1 {
+        color: green;
+    }
+}
+
+@media (min-width: 2000px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media (min-width: 2500px) {
+    h1 {
+        color: blueviolet;
+    }
+}
+
+@media (min-width: 3000px) {
+    h1 {
+        color: fuchsia;
+    }
+}
+
+@media (max-width: 768px){
+    h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 567px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
