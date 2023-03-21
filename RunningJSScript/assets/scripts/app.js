@@ -1,4 +1,4 @@
-
+/*jshint esversion: 8 */
 console.log("Hello from JS");
 // console.log("Before Conditional");
 let random = Math.random();
