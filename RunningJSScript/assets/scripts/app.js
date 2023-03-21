@@ -1,13 +1,13 @@
 /*jshint esversion: 8 */
-console.log("Hello from JS");
+// console.log("Hello from JS");
 // console.log("Before Conditional");
-let random = Math.random();
-if (random >= 0.5) {
-  console.log(`Random number is greater or equal to than 0.5. Random = ${random}`);
-} else
-{
-  console.log(`Random number is less than 0.5. Random = ${random}`);
-}
+// let random = Math.random();
+// if (random >= 0.5) {
+//   console.log(`Random number is greater or equal to than 0.5. Random = ${random}`);
+// } else
+// {
+//   console.log(`Random number is less than 0.5. Random = ${random}`);
+// }
 // console.log("After Conditional");
 let price = 0;
 let age = Math.random() * 90;
