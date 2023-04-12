@@ -54,3 +54,54 @@ const{email: mailE, password:passphrase, firstName:first, lastName:last, died =
   'N/A', bio='Nothing yet'} = user2;
 // Notice how a default can be put in place where undefined would show up
 console.log(mailE, passphrase, first, last, bio, died);
+
+// PARAM Destructuring
+const fullName = ({first, last}) => {
+  return `${first}  ${last}`;
+};
+
+const runner = {
+  first: 'Eliud',
+  last: 'Kipchoge',
+  country: 'Kenya'
+};
+
+console.log(fullName(runner)); // Eliud Kipchoge
+
+const wholeName = function({firstName, lastName = 'NoLastName'}) {
+  return `${firstName}  ${lastName}`;
+};
+
+const movies = [
+  {
+    title: 'Sharkys Machine',
+    score: 93,
+    year: 1977 
+  },
+  {
+    title: 'Red Dawn',
+    score: 89,
+    year: 2004
+  },
+  {
+    title: 'Little Mermaid',
+    score: 90,
+    year: 1995
+  }
+
+];
+
+console.log(movies.filter((movie) => movie.score >= 90));
+// Destructured
+console.log(movies.filter(({score}) => score < 90));
+
+console.log(movies.map(movie => {
+  return `${movie.title} ${movie.year} is rated ${movie.score}`;
+  })
+);
+
+// Destructured
+console.log(movies.map(({title, score, year}) => {
+  return `${title} ${year} is rated ${score}`;
+  })
+);
