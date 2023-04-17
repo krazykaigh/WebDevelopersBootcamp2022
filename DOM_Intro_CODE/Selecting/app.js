@@ -41,3 +41,11 @@ console.log(oneImage);
 
 const divver = document.querySelector("input[type='checkbox']");
 console.log(divver);
+
+const textCont = document.querySelectorAll('p');
+
+for (let tc of textCont) {
+    tc.innerText = 'This is the takeover!';
+}
+
+document.querySelector('p').innerText = 'This paragraph was re-re-edited for some new reason.'
