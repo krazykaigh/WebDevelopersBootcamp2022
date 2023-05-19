@@ -33,6 +33,6 @@ window.addEventListener('keydown', function(evt){
       break;
     default:
       console.log("NOT AN ARROW!!")
-
+      break;
   }
 })
