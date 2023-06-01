@@ -9,11 +9,10 @@ shelterForm.addEventListener("submit", function(e) {
     const newLi= document.createElement("li");
     newLi.innerText = animalName;
     list.append(newLi);
-    input.value=" ";
+    input.value="";
   } else {
     input.value="";
   }
-
 })
 
 const validStr = (str) => str ? true : false
