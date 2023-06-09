@@ -11,11 +11,61 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: solid black;
 }
 
 .no-nargin {
     margin : 0px;
     padding: 0px;
+}
+
+#counter {
+    border-radius: 10%;
+    width: 50px;
+    padding: 3px;
+}
+
+#selector {
+    display: inline-block;
+}
+
+#finalScore {
+    display: inline-block;
+}
+
+#btn-1 {
+    background-color: greenyellow;
+    color: #000;
+}
+
+#btn-2 {
+    background-color: blue;
+    color: #fff;
+}
+
+#btn-3 {
+    background-color: crimson;
+    color: #fff;
+}
+
+.p-container{
+    display: flex;
+    gap: .5rem;
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+  }
+
+.black{
+    color: black;
+}
+
+.lose{
+    color: red;
+}
+
+.win{
+    color: green;
 }
 
 h3 {
@@ -24,3 +74,7 @@ h3 {
     margin: 0px;
     line-height: 100%;
   }
+
+button {
+    width: 32.5%;
+}

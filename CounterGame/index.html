@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, 
     initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/app.css" />
-    <script src="assets/scripts/app.js" defer></script>
-    <title>Project Starter</title>
+  <link rel="stylesheet" href="assets/styles/app.css" />
+  <script src="assets/scripts/app.js" defer></script>
+  <title>Score Keeper</title>
 </head>
-  <body>
-    <container class="center">
-      <section class="no-margin">
-        <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="gamers">
-      </section>
-      <section class="no-margin">
-        <h3 class="no-margin">Video Game Score Keeper</h3>        
-      </section>
-      <section>
-        <h1 id="Score">0 to 0</h1>
-        <p>Use the buttons below to keep score</p>
-        <label for="counter">Playing to</label>
-        <input type="range" value="5" min = "0" max= 15 steo="1" onchage="showVal(this.value)" name="counter" id="counter">
-      </section>
-      <section class="no-margin">
-        <button class="no-margin">Player 1 Score</button>
-        <button class="no-margin">Player 2 Score</button>
-        <button class="no-margin">RESET</button>
-      
-      </section>
-      <!-- <script src="script.js"></script> -->
-    </container>
+
+<body>
+  <container class="center">
+    <section class="no-margin">
+      <img
+        src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+        alt="gamers">
+    </section>
+
+    <section class="no-margin">
+      <h3 class="no-margin">Video Game Score Keeper</h3>
+    </section>
+
+    <section class = "p-container">
+      <p id = "p1Score" class = "win lose black"> 0 </p> 
+      <p> to </p>
+      <p id = "p2Score" class = "win lose black"> 0 </p>
+    </section>
+
+    
+      <p>Use the buttons below to keep score</p>
+
+
+      <label for="counter">Playing to</label>
+      <span id="selector">
+        <select name="counter" id="counter">
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+      </span>
+      <span id = "finalScore">
+        0
+      </span>
+
+      <!-- <input type="range" value="5" min="0" max=15 steo="1" onchage="showVal(this.value)" name="counter" id="counter">
+      <output></output> -->
+    </section>
+    <section class="no-margin">
+      <button class="no-margin button" id="btn-1">Player 1 Score</button>
+      <button class="no-margin button" id="btn-2">Player 2 Score</button>
+      <button class="no-margin button" id="btn-3">RESET</button>
+
+    </section>
+    <!-- <script src="script.js"></script> -->
+  </container>
 
 </body>
+
 </html>
